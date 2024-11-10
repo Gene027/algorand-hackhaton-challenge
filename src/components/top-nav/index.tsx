@@ -80,6 +80,8 @@ export const TopNav = ({
 
   useEffect(() => {
     if (!walletInstance) return;
+
+    // handles wallet reconnection on refresh
     walletInstance
       .reconnectSession()
       .then((accounts) => {

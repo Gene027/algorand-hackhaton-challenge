@@ -26,7 +26,7 @@ export const useAlgoActions = (
 
     const sender = { addr: activeAddress };
     const receiver = {
-      addr: 'KVFFG5DIEMR5FU4NIXZFYUVXPSNVZSSR64XMJPK566E2VPU5IJESEYOSP4',
+      addr: process.env.NEXT_PUBLIC_MY_ADDRESS || '',
       amount: 1000000,
     };
 
